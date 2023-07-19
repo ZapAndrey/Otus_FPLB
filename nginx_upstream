@@ -4,3 +4,8 @@
  	 server 172.20.21.57:81;
  	 server 172.20.21.58:81;
  }
+  upstream wp {
+ 	 least_conn;
+ 	 server 172.20.21.57:80;
+ 	 server 172.20.21.58:80;
+ }
