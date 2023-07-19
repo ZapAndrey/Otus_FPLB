@@ -66,7 +66,7 @@ http.port: 9200
 #The default list of hosts is [172.20.21.53, "[::1]"]
 #
 #discovery.seed_hosts: ["host1", "host2"]
-discovery.type: single-node
+#discovery.type: single-node
 #
 # Bootstrap the cluster using an initial set of master-eligible nodes:
 #
