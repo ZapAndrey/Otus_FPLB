@@ -1,3 +1,17 @@
+СХЕМА РЕАЛИЗУЕМОГО ПРОЕКТА
+project_shema2.png 
+**************************************************************************
+
+РАЗВОРАЧИВАНИЕ СЕРВЕРОВ
+1_monitoring.sh      мониторинг
+2_elk.sh             логирование
+3_1_mysql_master.sh  MySQL master
+3_2_mysql_slave.sh   MySQL slave
+4_backend1.sh        beckend (Apache+ WordPress)
+5_nginx.sh           балансировщик
+**************************************************************************
+
+КОНФИГУРАЦИОННЫЕ ФАЙЛЫ
 backupbd.sh 	бекап бд Wordpress потаблично
 
 elasticsearch.yml конфигурирование Elasticsearch
