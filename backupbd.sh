@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mysql -uroot -p'!PassBase1' -e "stop slave"
 for DB in $(mysql -uroot -p'!PassBase1' -e "show databases like 'wordpres%_db'" --skip-column-names); 
   do
   
@@ -11,3 +12,4 @@ for DB in $(mysql -uroot -p'!PassBase1' -e "show databases like 'wordpres%_db'" 
   echo $DB
   
 done
+mysql -uroot -p'!PassBase1' -e "start slave"
